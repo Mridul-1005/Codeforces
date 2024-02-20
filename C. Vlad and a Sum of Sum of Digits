@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+typedef long long ll;
+using namespace std;
+int getsum(int i){
+int sum=0;
+while(i!=0){
+    sum+=i%10;
+    i/=10;
+}
+return sum;
+}
+int main ()
+{
+    int t, n, cnt;
+    cin >> t;
+
+    while (t--) {
+        cin >> n;
+        int cnt=0;
+        for(int i=1;i<=n;i++){
+            cnt+=getsum(i);
+        }
+
+    cout<<cnt<<endl;
+ }
+
+}
