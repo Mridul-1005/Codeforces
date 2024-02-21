@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a,b,c,wait;
+    cin>>a>>b>>c;
+    int extra=(a-b)*c;
+    if(extra%b==0)
+    wait=extra/b;
+    else
+    wait=extra/b+1;
+    cout<<wait<<endl;
+}
